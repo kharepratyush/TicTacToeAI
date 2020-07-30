@@ -118,12 +118,12 @@ def btnClick(buttons, button_id):
 		if done:
 			if reward != 10:
 				#print(reward)
-				messagebox.Result("Result", "Human wins!!!")
+				messagebox.showinfo("showinfo", "Human wins!!!")
 				disableButton()
 				restart_program()
 		
 		if flag == 9:
-			messagebox.Result("Result", "Tie !!!")
+			messagebox.showinfo("showinfo", "Tie !!!")
 			disableButton()
 			restart_program()
 
@@ -140,16 +140,16 @@ def btnClick(buttons, button_id):
 
 		if done:
 			if reward != 10:
-				messagebox.Result("Result", "AI wins!!!")
+				messagebox.showinfo("showinfo", "AI wins!!!")
 				disableButton()
 				restart_program()
 
 		if flag == 9:
-			messagebox.Result("Result", "Tie!!!")
+			messagebox.showinfo("showinfo", "Tie!!!")
 			disableButton()
 			restart_program()
 	else:
-		tkinter.messagebox.Result("Tic-Tac-Toe", "Button already Clicked!")
+		tkinter.messagebox.showinfo("Tic-Tac-Toe", "Button already Clicked!")
 
 def restart_program():
     python = sys.executable
